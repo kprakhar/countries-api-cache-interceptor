@@ -6,7 +6,7 @@ import './App.css';
 
 import { HTTP } from "./utils/apiConfig";
 
-const COUNTRIES = ['India', 'USA', 'Germany', 'United Kingdom', 'France', 'Japan', 'Canada', 'Brazil', 'Australia'];
+const COUNTRIES = ['India', 'United States', 'Germany', 'United Kingdom', 'France', 'Japan', 'Canada', 'Brazil', 'Australia'];
 
 function App() {
 

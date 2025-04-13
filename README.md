@@ -1,4 +1,4 @@
-# 🌍 This project fetches country details from the REST Countries API and uses caching to improve performance and reduce unnecessary network calls. It uses:
+# 🌍 This project fetches country capitals from the COUNTRIES NOW API and uses caching to improve performance and reduce unnecessary network calls. It uses:
 
 - axios for making API requests
 

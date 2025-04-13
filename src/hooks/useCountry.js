@@ -9,14 +9,13 @@ const useCountry = (countryName) => {
     const fetchCountry = async () => {
         setIsLoading(true);
         try {
-            const response = await HTTP.get(`/name/${countryName}`);
+            const response = await HTTP.get(`/capital/q?country=${countryName}`);
 
-            const { data = [] } = response;
+            const { data = {} } = response.data ?? {};
 
-            const [country] = data;
-            const { capital = [] } = country;
+            const { capital } = data;
             setCountryInfo({
-                capital: capital[0],
+                capital: capital,
             });
             setIsDataFromCache(response.cached);
         } catch (err) {

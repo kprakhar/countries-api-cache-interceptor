@@ -3,7 +3,7 @@ import addCacheInterceptor from "./apiCache";
 
 // Creates an axios instance for the REST Countries API
 const axiosInstance = axios.create({
-    baseURL: 'https://restcountries.com/v3.1',
+    baseURL: 'https://countriesnow.space/api/v0.1/countries',
     headers: {
         'Content-Type': 'application/json'
     }
