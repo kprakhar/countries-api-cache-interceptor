@@ -1,6 +1,7 @@
 import axios from "axios";
 import addCacheInterceptor from "./apiCache";
 
+// Creates an axios instance for the REST Countries API
 const axiosInstance = axios.create({
     baseURL: 'https://restcountries.com/v3.1',
     headers: {
@@ -8,8 +9,10 @@ const axiosInstance = axios.create({
     }
 })
 
+// Apply caching to the axios instance and return it
 export const getAxiosInstanceWithCache = () => {
     return addCacheInterceptor(axiosInstance)
 };
 
+// Export the configured HTTP client
 export const HTTP = getAxiosInstanceWithCache();
